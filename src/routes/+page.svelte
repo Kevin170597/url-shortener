@@ -26,7 +26,7 @@
     <title>Acortador de URL</title>
 </svelte:head>
 <header>
-    <img src="/icon.png" alt="logo">
+    <img src="/logo.png" alt="logo">
 </header>
 <div class="shortenerContainer">
     <h1>Acortador de link</h1>
