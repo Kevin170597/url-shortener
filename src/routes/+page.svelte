@@ -22,8 +22,12 @@
 </script>
 
 <svelte:head>
+    <link rel="icon" href="/icon.png"/>
     <title>Acortador de URL</title>
 </svelte:head>
+<header>
+    <img src="/icon.png" alt="logo">
+</header>
 <div class="shortenerContainer">
     <h1>Acortador de link</h1>
     <form on:submit={postUrl}>
@@ -50,6 +54,17 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+    header {
+        height: 10vh;
+        background-color: #222222;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    header img {
+        height: 70%;
+    }
     .shortenerContainer {
         font-family: "Varela Round", sans-serif;
         display: flex;
@@ -57,7 +72,7 @@
         box-sizing: border-box;
         padding: 50px 0;
         align-items: center;
-        height: 90vh;
+        height: 80vh;
         background-color: #1b1b1d;
     }
     .shortenerContainer h1 {
